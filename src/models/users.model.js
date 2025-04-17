@@ -1,3 +1,5 @@
+//models/	Responsável pelo acesso aos dados (leitura, escrita nos arquivos JSON).
+
 const fs = require('fs/promises');
 const path = require('path');
 

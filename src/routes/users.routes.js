@@ -1,3 +1,5 @@
+// routes/	Define os caminhos de acesso à API. Não contém lógica de negócio.
+
 const express = require('express');
 const router = express.Router();
 const usersController = require('../controllers/users.controller');
