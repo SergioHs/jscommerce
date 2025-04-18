@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Smartphone Galaxy S24",
+    "description": "Smartphone Android com 256GB de armazenamento",
+    "price": 3999.99,
+    "stock": 149,
+    "category": "Eletrônicos",
+    "brand": "Samsung"
+  },
+  {
+    "id": 2,
+    "name": "Notebook Dell XPS 13 Plus",
+    "description": "Nova geração com tela OLED e processador i9",
+    "price": 12344.99,
+    "stock": 5,
+    "category": "Informática",
+    "brand": "Dell"
+  },
+  {
+    "id": 3,
+    "name": "Fone de Ouvido JBL Tune 500",
+    "description": "Fone leve e dobrável com som JBL Pure Bass",
+    "price": 199.99,
+    "stock": 25,
+    "category": "Áudio",
+    "brand": "JBL"
+  }
+]
