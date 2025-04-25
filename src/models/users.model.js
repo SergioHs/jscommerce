@@ -10,6 +10,11 @@ const getUsers = async () => {
     return JSON.parse(data);
 }
 
+const saveUsers = async (users) => {
+    await fs.writeFile(filePath, JSON.stringify(users, null, 2));
+}
+
 module.exports = {
-    getUsers
+    getUsers,
+    saveUsers
 }

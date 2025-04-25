@@ -1,12 +1,20 @@
 [
-    {
-        "id": 1,
-        "name": "Alice",
-        "email": "alice@gmail.com"
-    },
-    {
-        "id": 2,
-        "name": "Bob",
-        "email": "bob@gmail.com"
-    }
+  {
+    "id": 1,
+    "username": "Alice",
+    "email": "alice@gmail.com",
+    "password": "password123"
+  },
+  {
+    "id": 2,
+    "username": "Bob",
+    "email": "bob@gmail.com",
+    "password": "password456"
+  },
+  {
+    "id": 3,
+    "username": "charlie",
+    "email": "charlie@gmail.com",
+    "password": "$2b$10$P6YP.LBQ7Dv9V9c7MOt3UOW044sEKl/MvLLZNswE1qjUJF8srgtky"
+  }
 ]
