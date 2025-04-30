@@ -1,0 +1,13 @@
+[function toISOString() { [native code] }] GET - /products
+[2025-04-29T23:49:48.490Z] GET - /products
+[2025-04-30T00:10:06.545Z] GET - /users
+[2025-04-30T00:10:12.392Z] GET - /users
+[2025-04-30T00:10:21.495Z] GET - /products
+[2025-04-30T00:10:25.426Z] GET - /products
+[2025-04-30T00:10:26.673Z] GET - /products
+[2025-04-30T00:10:27.668Z] GET - /products
+[2025-04-30T00:10:28.544Z] GET - /products
+[2025-04-30T00:10:29.483Z] GET - /products
+[2025-04-30T00:10:30.448Z] GET - /products
+[2025-04-30T00:10:31.504Z] GET - /products
+[2025-04-30T00:10:32.684Z] GET - /products

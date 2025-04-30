@@ -16,5 +16,11 @@
     "username": "charlie",
     "email": "charlie@gmail.com",
     "password": "$2b$10$P6YP.LBQ7Dv9V9c7MOt3UOW044sEKl/MvLLZNswE1qjUJF8srgtky"
+  },
+  {
+    "id": 4,
+    "username": "sergio",
+    "email": "sergio@gmail.com",
+    "password": "$2b$10$f9FRzfo0kOFFNeRtIHM8EexUh1CTo7wKeslmqVQh5UW8rZkHQSx.S"
   }
 ]
