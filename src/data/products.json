@@ -4,7 +4,7 @@
     "name": "Smartphone Galaxy S24",
     "description": "Smartphone Android com 256GB de armazenamento",
     "price": 3999.99,
-    "stock": 149,
+    "stock": 1515151,
     "category": "Eletrônicos",
     "brand": "Samsung"
   },
@@ -12,7 +12,7 @@
     "id": 2,
     "name": "Notebook Dell XPS 13 Plus",
     "description": "Nova geração com tela OLED e processador i9",
-    "price": 12344.99,
+    "price": 22222222.99,
     "stock": 5,
     "category": "Informática",
     "brand": "Dell"
@@ -25,5 +25,15 @@
     "stock": 25,
     "category": "Áudio",
     "brand": "JBL"
+  },
+  {
+    "id": 1746578883193,
+    "name": "TV TCL 50\"",
+    "description": "TV smart",
+    "price": 5000,
+    "stock": 128,
+    "category": "Eletrônicos",
+    "brand": "TCL",
+    "image": "1746578883191-455129876.png"
   }
 ]

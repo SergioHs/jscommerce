@@ -20,8 +20,23 @@ const saveProducts = async (products) => {
     await fs.writeFile(filePath, JSON.stringify(products, null, 2));
 }
 
+const saveProduct = async (product) => {
+    const products = await getProducts();
+    let result = [];
+
+    let keys = Object.keys(products);
+    keys.forEach(function(key){
+        result.push(products[key]);
+    })
+    result.push(product);
+
+    await saveProducts(result)
+}
+
+
 module.exports = {
     getProducts,
     getProductById,
-    saveProducts
+    saveProducts,
+    saveProduct
 }

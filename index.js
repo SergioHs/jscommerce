@@ -1,7 +1,8 @@
 require('dotenv').config();
 const express = require('express');
+const cors = require('cors');
 const app = express();
-var cors = require('cors')
+const path = require('path');
 const userRoutes = require('./src/routes/users.routes');
 const productRoutes = require('./src/routes/products.routes');
 const authRoutes = require('./src/routes/auth.routes');
@@ -18,9 +19,11 @@ app.use(cors())
 //Public routes
 app.use('/auth', authRoutes);
 
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
 //Private routes
 app.use('/users', verifyToken, userRoutes);
-app.use('/products', verifyToken, productRoutes);
+app.use('/products', productRoutes);
 
 const port = process.env.PORT;
 app.listen(port, () => console.log("Servidor iniciado em: http://localhost:"+port));

@@ -1,4 +1,4 @@
-const {getProducts, getProductById, saveProducts} = require('../models/products.model');
+const {getProducts, getProductById, saveProducts, saveProduct} = require('../models/products.model');
 
 const getAll = async () => {
     const products = await getProducts();
@@ -33,8 +33,21 @@ const updateProduct = async (id, data) => {
     return products[index];
 }
 
+const createProduct = async (data, imagePath) => {
+    const newProduct = {
+        id: Date.now(),
+        ...data,
+        price: parseFloat(data.price),
+        stock: parseInt(data.stock),
+        image: imagePath
+    }
+    await saveProduct(newProduct);
+    return newProduct;
+}
+
 module.exports = {
     getAll,
     getProduct,
-    updateProduct
+    updateProduct,
+    createProduct
 }

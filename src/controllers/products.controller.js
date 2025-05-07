@@ -38,9 +38,20 @@ const updateProduct = async (request, response) => {
     }
 }
 
+const createProduct = async (request, response) => {
+    try {
+        const imagePath = request.file ? request.file.filename : null;
+        const product = await productService.createProduct(request.body, imagePath);
+        response.status(201).json(product);
+    } catch (error){
+        response.status(500).json({message: "Error: " + error.message});
+    }
+}
+
 
 module.exports = {
     getAllProducts,
     getProduct,
-    updateProduct
+    updateProduct,
+    createProduct
 }
