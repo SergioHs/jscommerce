@@ -22,17 +22,9 @@ const saveProducts = async (products) => {
 
 const saveProduct = async (product) => {
     const products = await getProducts();
-    let result = [];
-
-    let keys = Object.keys(products);
-    keys.forEach(function(key){
-        result.push(products[key]);
-    })
-    result.push(product);
-
-    await saveProducts(result)
+    products.push(product);
+    await saveProducts(products); 
 }
-
 
 module.exports = {
     getProducts,
