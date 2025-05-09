@@ -48,10 +48,37 @@ const createProduct = async (request, response) => {
     }
 }
 
+const removeProduct = async (request, response) => {
+    try {
+        const deleted = await productService.removeProduct(request.params.id);
+        if(!deleted){
+            return response.status(404).json({ message: 'Product not found'});
+        }
+        return response.status(204).send();
+    } catch (error){
+        response.status(500).json({message: "Error: " + error.message});
+    }
+}
+
+const searchByName = async (request, response) => {
+    try {
+        const { searchTerm } = request.query;
+        if(!searchTerm){
+            return response.status(400).json({ message: "Termo de pesquisa obrigatório"})
+        }
+        const products = await productService.searchByName(searchTerm);
+
+        response.status(200).json(products);
+    } catch (error){
+        response.status(500).json({message: "Error: " + error.message});
+    }
+}
 
 module.exports = {
     getAllProducts,
     getProduct,
     updateProduct,
-    createProduct
+    createProduct,
+    removeProduct,
+    searchByName
 }

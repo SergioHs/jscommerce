@@ -45,9 +45,32 @@ const createProduct = async (data, imagePath) => {
     return newProduct;
 }
 
+const removeProduct = async (id) => {
+    const products = await getProducts();
+    const index = products.findIndex(p => p.id === Number(id));
+    if(index === -1) return null;
+    const deleted = products.splice(index, 1);
+    await saveProducts(products);
+    return deleted[0];
+}
+
+const searchByName = async(searchTerm) => {
+    const products = await getProducts();
+
+    return products.filter(p => {
+        const name = p.name || '';
+        const description = p.description || '';
+
+        return name.toLowerCase().includes(searchTerm.toLowerCase()) 
+        || description.toLowerCase().includes(searchTerm.toLowerCase());
+    })
+}
+
 module.exports = {
     getAll,
     getProduct,
     updateProduct,
-    createProduct
+    createProduct,
+    removeProduct,
+    searchByName
 }

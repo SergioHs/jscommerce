@@ -1167,3 +1167,7 @@
 [2025-05-08T19:48:29.308Z] POST - /products
 [2025-05-08T19:48:48.040Z] POST - /products
 [2025-05-08T23:13:20.564Z] POST - /products
+[2025-05-09T00:34:22.086Z] DELETE - /products/1746746000592
+[2025-05-09T00:35:16.209Z] DELETE - /products/1746733728055
+[2025-05-09T00:51:22.899Z] GET - /products/searchByName?searchTerm=Smartphone
+[2025-05-09T00:52:03.865Z] GET - /products/searchByName?searchTerm=Smart

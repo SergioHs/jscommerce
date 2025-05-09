@@ -65,25 +65,5 @@
     "category": "Eletrônicos",
     "brand": "TCL",
     "image": "1746733709320-603865532.png"
-  },
-  {
-    "id": 1746733728055,
-    "name": "aaaaaaaaa",
-    "description": "TV smart",
-    "price": 5000,
-    "stock": 128,
-    "category": "Eletrônicos",
-    "brand": "TCL",
-    "image": "1746733728052-800913920.png"
-  },
-  {
-    "id": 1746746000592,
-    "name": "bbbbbbbb",
-    "description": "TV smart",
-    "price": 5000,
-    "stock": 128,
-    "category": "Eletrônicos",
-    "brand": "TCL",
-    "image": "1746746000586-363814278.png"
   }
 ]
