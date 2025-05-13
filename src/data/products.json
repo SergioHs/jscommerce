@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "name": "Smartphone Galaxy S24",
+    "name": "TV Galaxy S24",
     "description": "Smartphone Android com 256GB de armazenamento",
-    "price": 3999.99,
-    "stock": 1515151,
-    "category": "Eletrônicos",
-    "brand": "Samsung"
+    "price": 400,
+    "stock": 100,
+    "category": "TV",
+    "brand": "TCL"
   },
   {
     "id": 2,

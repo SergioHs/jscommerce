@@ -74,11 +74,36 @@ const searchByName = async (request, response) => {
     }
 }
 
+const updateStock = (request, response) => {
+    const { id } = request.params;
+    const { quantity } = request.body;
+
+    if(!quantity){
+        return response.status(400).json({ message: "Erro: Quantidade é obrigatório"})
+    }
+
+    productService.updateStock(id, quantity)
+        .then(product => {
+            if(!product){
+                return response.status(404).json({ message: "Produto não encontrado"});
+            }
+            console.log("Estoque do produtos atualizado com sucesso");
+            response.json(product);
+        })
+        .catch(error => {
+            response.status(500).json({message: "Error: " + error.message});
+        })
+        .finally(() => {
+            console.log("Operação de patch completa com sucesso");
+        })
+}
+
 module.exports = {
     getAllProducts,
     getProduct,
     updateProduct,
     createProduct,
     removeProduct,
-    searchByName
+    searchByName,
+    updateStock
 }

@@ -66,11 +66,22 @@ const searchByName = async(searchTerm) => {
     })
 }
 
+const updateStock = async (id, quantity) => {
+    const products = await getProducts();
+    const index = products.findIndex(p => p.id === Number(id));
+    if(index === -1) return null;
+
+    products[index].stock = parseInt(quantity);
+    await saveProducts(products);
+    return products[index];
+}
+
 module.exports = {
     getAll,
     getProduct,
     updateProduct,
     createProduct,
     removeProduct,
-    searchByName
+    searchByName,
+    updateStock
 }
