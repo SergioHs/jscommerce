@@ -23,7 +23,7 @@ const updateProduct = async (id, data, imagePath) => {
     console.log('imagePath', imagePath);    
 
     const updatedProduct = {
-        id: data.id,
+        id: parseInt(data.id),
         name: data.name,
         description: data.description,
         price: parseFloat(data.price),
