@@ -1,69 +1,12 @@
 [
   {
-    "id": 1,
-    "name": "TV Galaxy S24",
-    "description": "Smartphone Android com 256GB de armazenamento",
-    "price": 400,
-    "stock": 100,
-    "category": "TV",
-    "brand": "TCL"
-  },
-  {
-    "id": 2,
-    "name": "Notebook Dell XPS 13 Plus",
-    "description": "Nova geração com tela OLED e processador i9",
-    "price": 22222222.99,
-    "stock": 5,
-    "category": "Informática",
-    "brand": "Dell"
-  },
-  {
-    "id": 3,
-    "name": "Fone de Ouvido JBL Tune 500",
-    "description": "Fone leve e dobrável com som JBL Pure Bass",
-    "price": 199.99,
-    "stock": 25,
-    "category": "Áudio",
-    "brand": "JBL"
-  },
-  {
-    "id": 1746578883193,
-    "name": "TV TCL 50\"",
+    "id": 1747354564040,
+    "name": "ccccccc",
     "description": "TV smart",
     "price": 5000,
     "stock": 128,
     "category": "Eletrônicos",
     "brand": "TCL",
-    "image": "1746578883191-455129876.png"
-  },
-  {
-    "id": 1746733689285,
-    "name": "TV TCL 50\"",
-    "description": "TV smart",
-    "price": 5000,
-    "stock": 128,
-    "category": "Eletrônicos",
-    "brand": "TCL",
-    "image": "1746733689279-927958904.png"
-  },
-  {
-    "id": 1746733706007,
-    "name": "TV TCL 50\"",
-    "description": "TV smart",
-    "price": 5000,
-    "stock": 128,
-    "category": "Eletrônicos",
-    "brand": "TCL",
-    "image": "1746733706004-908265790.png"
-  },
-  {
-    "id": 1746733709325,
-    "name": "TV TCL 50\"",
-    "description": "TV smart",
-    "price": 5000,
-    "stock": 128,
-    "category": "Eletrônicos",
-    "brand": "TCL",
-    "image": "1746733709320-603865532.png"
+    "image": null
   }
 ]

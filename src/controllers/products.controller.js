@@ -29,7 +29,8 @@ const getProduct = async (request, response) => {
 
 const updateProduct = async (request, response) => {
     try {
-        const updated = await productService.updateProduct(request.params.id, request.body);
+        const imagePath = request.file ? request.file.filename : null;
+        const updated = await productService.updateProduct(request.params.id, request.body, imagePath);
         return response.status(200).json(updated);
         
     } catch (error) {

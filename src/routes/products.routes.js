@@ -16,7 +16,7 @@ router.patch('/:id/stock', productsController.updateStock);
 router.get('/:id', productsController.getProduct);
 
 //PUT: localhost:3000/products/1
-router.put('/:id', productsController.updateProduct);
+router.put('/:id', upload.single('image'), productsController.updateProduct);
 
 //POST: localhost:3000/products
 router.post('/', upload.single('image'), productsController.createProduct);

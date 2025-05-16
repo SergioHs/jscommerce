@@ -16,11 +16,24 @@ const getProduct = async (id) => {
     return product;
 }
 
-const updateProduct = async (id, data) => {
+const updateProduct = async (id, data, imagePath) => {
     const product = await getProduct(id);
-    
-    //combina o produto com o novo
-    const updatedProduct = {...product, ...data};
+
+    console.log('data', data);
+    console.log('imagePath', imagePath);    
+
+    const updatedProduct = {
+        id: data.id,
+        name: data.name,
+        description: data.description,
+        price: parseFloat(data.price),
+        stock: parseInt(data.stock),
+        category: data.category,
+        brand: data.brand,
+        image: imagePath
+    }
+
+    console.log('updatedProduct', updatedProduct);
 
     //procurar e mesclar o produto no json
     const products = await getProducts();
